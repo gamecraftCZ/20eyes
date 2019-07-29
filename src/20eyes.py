@@ -75,7 +75,7 @@ def postponeCallback(top):
     global currentPostpone
     global breakEnd
     currentWindow = "running"
-    breakEnd = time() - WORK_TIME + currentPostpone
+    breakEnd = time() - WORK_TIME - currentPostpone
     currentPostpone += POSTPONE_TIME
     print(f"Postponed for {POSTPONE_TIME} minutes")
     top.destroy()
