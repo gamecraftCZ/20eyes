@@ -63,8 +63,10 @@ def startCallback(top):
 def startBreakCallback(top):
     global currentWindow
     global breakStart
+    global currentPostpone
     currentWindow = "breakRunning"
     breakStart = time()
+    currentPostpone = 0
     top.destroy()
 
 
